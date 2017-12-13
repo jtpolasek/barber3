@@ -1,0 +1,79 @@
+.header {
+
+  &__name {
+    margin-bottom: 20rem;
+    animation: moveInRight 1s ease-out;
+  }
+
+  &__phone{
+    margin-bottom: .5rem;
+    animation: moveInRight 1s ease-out;
+  }
+
+  &__address{
+    margin-bottom: 1rem;
+    animation: moveInLeft 1s ease-out;
+  }
+
+
+}
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    // font-size: $default-font-size;
+
+    // Change for the button element
+    border: none;
+    cursor: pointer;
+    animation: moveInBottom 1s ease-out;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+    &::after {
+      transform: scaleX(1.5) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-black;
+    opacity: 0.8;
+  
+    &::after {
+      background-color: $color-white;
+    }
+  }
+}

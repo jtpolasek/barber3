@@ -1,0 +1,26 @@
+.header {
+  font-family: inherit;
+  font-size: 3.2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgba($color-grey-light-1, 0.2), rgba($color-grey-dark-3, 0.2)), url(../img/razor.jpg);
+  // background-image: linear-gradient( to right bottom, rgba(#000, 0.1), rgba($color-grey-dark-3,0.8)),url(../img/razor.jpg);
+  // background-image: linear-gradient( to right bottom, rgba(#000, 0.8), rgba($color-primary-dark, 0.8)), url(../img/hero-small.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  text-align: center;
+  letter-spacing: .5rem;
+
+  &__box {
+    width: 75%;
+    margin: 0 auto;
+    // animation: moveInRight 1s ease-out;
+  }
+ }
+
+ 
