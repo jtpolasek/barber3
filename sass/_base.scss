@@ -35,11 +35,11 @@ $bp-smallest: 31.25em; //500px;
 
 @font-face {
   font-family: 'retro';
-  src:url("./fonts/nickerbockernf.woff") format("woff");
+  src: url('./fonts/nickerbockernf-webfont.woff2') format('woff2'),
+       url('./fonts/nickerbockernf-webfont.woff') format('woff');
   font-weight: normal;
-  font-style: normal; 
+  font-style: normal;
 }
-
 
 
 *,
